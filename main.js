@@ -1,4 +1,4 @@
-const args = process.argv.slice(2)
+const args = process.argv.slice(2)    //initialize args
 
 function Convert() {
   var str = '';
@@ -37,8 +37,8 @@ function Convert() {
           break;
         }
     }
-    if (i != args.length-1)
-      str = str + ', ';
+    if (i != args.length-1)      //if not the last integer to convert
+      str = str + ',';
   }
   console.log(str);     //print
 }
